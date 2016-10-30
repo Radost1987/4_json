@@ -12,7 +12,7 @@ def load_data(filepath):
 def pretty_print_json(data):
     if data is not None:
         formatted_data=json.dumps(data, ensure_ascii = False, sort_keys=True, indent=4)
-        print(formatted_data)
+        print('JSON файл в удобном формате:',formatted_data)
     else:
         print('Неправильно введен путь до файла или имя файла')
 
